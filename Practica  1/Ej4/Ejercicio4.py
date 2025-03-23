@@ -27,7 +27,7 @@ class FilterMail(Filter):
 
 
 # Filtro que comprueba la longitud de la contraseña
-class PasswordSizeFilter(Filter):
+class FilterPasswordSize(Filter):
     def execute(self, cadena):
         if len(cadena) < 8:
             print("Error: La contraseña debe tener al menos 8 caracteres.")
@@ -36,7 +36,7 @@ class PasswordSizeFilter(Filter):
         return True
 
 # Filtro que comprueba que contenga al menos un número
-class PasswordNumberFilter(Filter):
+class FilterPasswordNumber(Filter):
     def execute(self, cadena):
         if not any(char.isdigit() for char in cadena):
             print("Error: La contraseña debe contener al menos un número.")
@@ -45,7 +45,7 @@ class PasswordNumberFilter(Filter):
         return True
 
 # Filtro que comprueba que contenga al menos una letra mayúscula
-class PasswordUpperFilter(Filter):
+class FilterPasswordUpper(Filter):
     def execute(self, cadena):
         if not any(char.isupper() for char in cadena):
             print("Error: La contraseña debe contener al menos una letra mayúscula.")
