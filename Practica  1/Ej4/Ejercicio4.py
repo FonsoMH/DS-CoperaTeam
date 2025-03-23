@@ -109,7 +109,7 @@ class FilterManager:
 
 # Cliente
 def main():
-    # Crear el Target (Servicio de Autenticación)
+
     servicio_autenticacion = Objetivo()
 
     # Crear el gestor de filtros y pasarle el Target
@@ -123,11 +123,11 @@ def main():
     gestor.add_contrasena_filter(PasswordNumberFilter())
     gestor.add_contrasena_filter(PasswordUpperFilter())
 
-    # Solicitar credenciales al usuario
     correo = input("Introduce tu correo: ")
     contrasena = input("Introduce tu contraseña: ")
 
-    # Validar credenciales
+
+    # Procesar las credenciales
     if gestor.postCadena(correo, contrasena):
         print("Bienvenido.")
     else:
