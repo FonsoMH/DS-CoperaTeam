@@ -77,7 +77,7 @@ class FilterChain:
 # Clase Target
 class Objetivo:
     def execute(self):
-        print("Autenticación exitosa para 1 de los filtros")
+        print("Autenticación exitosa")
 
 
 # Clase FilterManager
@@ -119,9 +119,9 @@ def main():
     gestor.add_correo_filter(FilterMail())
 
     # Agregar filtros para la contraseña
-    gestor.add_contrasena_filter(PasswordSizeFilter())
-    gestor.add_contrasena_filter(PasswordNumberFilter())
-    gestor.add_contrasena_filter(PasswordUpperFilter())
+    gestor.add_contrasena_filter(FilterPasswordSize())
+    gestor.add_contrasena_filter(FilterPasswordNumber())
+    gestor.add_contrasena_filter(FilterPasswordUpper())
 
     correo = input("Introduce tu correo: ")
     contrasena = input("Introduce tu contraseña: ")
