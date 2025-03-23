@@ -31,9 +31,9 @@ class BasicLLM(LLM):
 class LLMDecorator(LLM):
     def __init__(self, wrapped):
         self.texto_decorado = wrapped
-
+    @abstractmethod
     def generate_summary(self, text, input_lang, output_lang, model):
-         return self.texto_decorado.generate_summary(text, input_lang, output_lang, model)
+        pass
 
 #Traslation decorador
 class TranslationDecorator(LLMDecorator):
