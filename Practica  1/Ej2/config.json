@@ -1,0 +1,8 @@
+{
+    "texto": "Texto de entrada a resumir...",
+    "input_lang": "en",
+    "output_lang": "es",
+    "model_llm": "facebook/bart-large-cnn",
+    "model_translation": "Helsinki-NLP/opus-mt-en-es",
+    "model_expansion": "facebook/blenderbot-400M-distill"
+}
