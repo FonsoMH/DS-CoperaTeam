@@ -1,8 +1,9 @@
-{
-    "texto": "Texto de entrada a resumir...",
-    "input_lang": "en",
-    "output_lang": "es",
+
+=======
+    "texto": "Artificial intelligence is rapidly transforming various industries, including healthcare, finance, and transportation. In the medical field, AI-powered algorithms assist doctors in diagnosing diseases more accurately and quickly. Financial institutions use AI to detect fraudulent transactions and optimize investment strategies. Meanwhile, self-driving cars rely on AI to navigate roads safely. As AI continues to evolve, experts emphasize the importance of ethical considerations and regulations to ensure its responsible use.",
+    "input_lang": "Idioma del texto de entrada.",
+    "output_lang": "Idioma de salida para la traducción (si se aplica).",
     "model_llm": "facebook/bart-large-cnn",
     "model_translation": "Helsinki-NLP/opus-mt-en-es",
-    "model_expansion": "facebook/blenderbot-400M-distill"
-}
+    "model_expansion": "meta-llama/Llama-3.2-3B-Instruct"
+  }
